@@ -1,0 +1,8 @@
+services:
+  python:
+    build: .
+    command: python _master_call.py
+    volumes:
+      - ./tasks:/app
+    environment:
+      - PYTHONUNBUFFERED=1
